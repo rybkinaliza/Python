@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+        <title> CV </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Inspiration&family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+        <style>
+            body
+            {
+                background-attachment: fixed;
+                background-image:url({{url_for('static',filename='img/hip-square.png')}})
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!------>
+        </header>
+        <main>
+            <h1>MY CV </h1>
+            <img src="{{ url_for('static', filename='img/kitty.jpg') }}" alt="">
+
+        </main>
+        <a href="/Home_Page" class="floating-button">Back</a>
+    </body>
+</html>
